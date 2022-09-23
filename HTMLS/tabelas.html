@@ -7,12 +7,13 @@
     <title>Tabelas</title>
 </head>
 <body>
-    <h1>Tabelas</h1>
-    <table border="1" width="80%" >
+    <h1>Tabelas</h1><br>
+    <h2>Implicita</h2><br>
+    <table border="1" width="700" cellpadding="5" cellspacing="7">
         <tr bgcolor="#FFDEAD">
-        <th width="10%">Código</th>
-        <th width="40%">Produto</th>
-        <th width="30%">Preço</th>
+        <th width="10%" align="center">Código</th>
+        <th width="30%" align="center">Produto</th>
+        <th width="30%" align="center">Preço</th>
         </tr>
         <tr>
             <td>001</td>
@@ -36,10 +37,60 @@
         <tr>
             <td colspan="2">Cupom R$10</td>
         </tr>
-        <tr>
-            <td >Total</td>
-            <td colspan="2">ffffff</td>
+        <tr bgcolor="#FFFF00">
+            <th>Total</th>
+            <td colspan="2">7.525,50</td>
         </tr>
+    </table><br>
+
+    <h2>Explicita</h2><br>
+
+    <table border="1" width="700" cellpadding="5" cellspacing="7">
+        <thead bgcolor="#D8BFD8">
+            <tr>
+            <th align="center">#ID</th>
+            <th align="center">PROJETO</th>
+            <th align="center">TÍTULO</th>
+            <th align="center">STATUS</th>
+            <th align="center">COMENTÁRIOS</th>
+        </tr>
+        </thead>
+        <tbody bgcolor="#FFDAB9">
+            <tr>
+            <td>01</td>
+            <td>Nome do Projeto</td>
+            <td>Criando Tabelas</td>
+            <td>Processando</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+        <tbody bgcolor="#FFF8DC">
+            <tr>
+            <td>01</td>
+            <td>Nome do Projeto</td>
+            <td>Criando Tabelas</td>
+            <td>Processando</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+        <tbody bgcolor="#FFDAB9">
+            <tr>
+            <td>01</td>
+            <td>Nome do Projeto</td>
+            <td>Criando Tabelas</td>
+            <td>Processando</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+        <tbody bgcolor="#FFF8DC">
+            <tr>
+            <td>01</td>
+            <td>Nome do Projeto</td>
+            <td>Criando Tabelas</td>
+            <td>Processando</td>
+            <td>0</td>
+        </tr>
+        </tbody>
     </table>
 </body>
 </html>

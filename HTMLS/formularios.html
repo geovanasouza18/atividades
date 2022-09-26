@@ -9,28 +9,72 @@
 <body>
     <h1>Formulários</h1>
     <h3>Inputs Básicos</h3>
+
     <form action="/HTMLS/formularios.html" method="post">
+
         <label> Nome</label><br>
-        <input type="text" name="nome"/><br>
+        <input type="text" name="nome" placeholder="Digite seu nome"/><br><br>
 
         <label>Senha</label><br>
-        <input type="password" name="senha"/><br>
+        <input type="password" name="senha" placeholder="Digite sua senha"/><br><br>
 
-        <label>Sexo</label>
-        <input type="radio" name="sexo" id=""> Masculino<br>
-        <input type="radio" name="sexo" id=""> Feminino<br>
+        <label>Time</label><br>
+        <input type="text" name="Time" placeholder="Digite o nome do seu time" list="Lista_time">
+        <datalist id="Lista_time">
+            <option value="Flamengo"/>
+            <option value="Vasco"/>
+            <option value="Palmeiras"/>
+            <option value="São Paulo"/>
+        </datalist><br><br>
+
+        <label>Sexo</label><br>
+
+        <!--Adicionado a tag select-->
+
+        <select name="Sexo" id="">
+            <option value="">Selecione</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+        </select><br><br>
+
+        <label>Marcas de Carros</label><br>
+        <select name="Carros" id="">
+            <optgroup label="Alemas">
+                <option value="Mercedes">Mercedes</option>
+                <option value="Audi">Audi</option>
+            </optgroup>
+
+            <optgroup label="Suecos">
+                <option value="Volvo">Volvo</option>
+                <option value="Saad">Saad</option>
+            </optgroup>
+        </select><br><br><br>
 
         <label>Escolha</label>
         <input type="checkbox" name="escolha"/> Comédia
         <input type="checkbox" name="escolha"/> Romance
-        <input type="checkbox" name="escolha"/> Terror <br>
+        <input type="checkbox" name="escolha"/> Terror <br><br>
 
 
-        <label>Arquivo</label><br>
-        <input type="file" name="arquivo"/><br>
+        <label>Arquivo</label><br><br>
+        <input type="file" name="arquivo"/><br><br><br>
 
         <label>Data</label>
-        <input type="date" name="data"/>
+        <input type="date" name="data"/><br><br>
+        <input type="button" value="Sem ação"><br><br>
+        <input type="submit" value="Ação"><br><br><br>
+
+        <label>Cor</label><br>
+      <input type="color" name="cor" id=""><br><br>
+
+      <label>Email</label><br>
+      <input type="email" name="Email" id=""><br><br>
+
+      <label>Range</label><br>
+      <input type="range" name="Range" min="0" max="100" step="2"><br><br>
+
+      <label>Busca</label><br>
+      <input type="search" name="Pesquisa"><br><br>
 
     </form>
 </body>

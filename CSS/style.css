@@ -1,0 +1,25 @@
+body{
+    background-color: bisque;
+}
+h1{
+    color: brown;
+    font-size: 1.75em
+}
+input{
+    display: block;
+    margin-bottom: 20px;
+    background-color: aqua;
+}
+.teste{
+    border: solid purple;
+   background-color:snow ;
+}
+
+label{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#email{
+    height: 25px;
+}
